@@ -1,6 +1,6 @@
 # Escrow Smartcontract
 
-## Project description \[ENG\]
+#### Project description \[ENG\]
 
 This project is submitted as the final degree project for Computer Engineering at the Complutense University of Madrid. It involves the development of a payment method on the Ethereum blockchain aimed at eliminating the hesitation potential consumers may have when making payments to e-commerce platforms perceived as unreliable.
 
@@ -14,7 +14,7 @@ This blockchain-based payment solution enhances trust between consumers and e-co
 
 ---
 
-## Descripción del proyecto \[ESP\]
+#### Descripción del proyecto \[ESP\]
 
 Este proyecto se presenta como el trabajo de fin de grado de Ingeniería Informática en la Universidad Complutense de Madrid. Consiste en el desarrollo de un método de pago en la blockchain de Ethereum cuyo objetivo es eliminar las dudas que pueden tener los consumidores potenciales al realizar pagos en plataformas de comercio electrónico percibidas como poco fiables.
 
