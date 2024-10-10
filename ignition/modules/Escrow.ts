@@ -3,14 +3,17 @@ import { ethers } from "hardhat";
 
 const EscrowModule = buildModule("EscrowModule", (m) => {
 
-  const payer = m.getAccount(0);
+  const from = m.getAccount(0);
+  const value = ethers.parseUnits("1.0", "wei");
+
   const payee = m.getAccount(1);
   const agent = m.getAccount(2);
-  const amount = ethers.parseEther("1.0");
+
+  console.log(payee, agent);
 
   const escrow = m.contract("Escrow", [payee, agent], {
-    from: payer,
-    value: amount,
+    from,
+    value,
   });
 
   return { escrow };

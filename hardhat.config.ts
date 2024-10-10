@@ -1,17 +1,17 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import { vars } from "hardhat/config";
 
 const fs = require("fs");
-const path = require("path");
-const infuraProjectId = fs.readFileSync(path.join(__dirname, ".infura")).toString().trim();
-const secret = fs.readFileSync(path.join(__dirname, ".secret")).toString().trim();
+const infuraProjectId = vars.get("INFURA_API_KEY");
+const mnemonic = vars.get("MNEMONIC");
 
 const config: HardhatUserConfig = {
   networks: {
   sepolia: {
       url: `https://sepolia.infura.io/v3/${infuraProjectId}`,
       accounts: {
-        mnemonic: secret,
+        mnemonic,
         path: "m/44'/60'/0'/0",
         initialIndex: 0,
         count: 20,
