@@ -1,0 +1,15 @@
+{
+  "name": "escrow-smartcontract",
+  "version": "1.0.0",
+  "description": "This project is submitted as the final degree project for Computer Engineering at the Complutense University of Madrid. It involves the development of a payment method on the Ethereum blockchain aimed at eliminating the hesitation potential consumers may have when making payments to e-commerce platforms perceived as unreliable.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^4.13.0"
+  }
+}
